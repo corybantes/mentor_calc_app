@@ -5,12 +5,108 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --very-dark-desaturated-blue-main: 222, 26%, 31%;
+  --very-dark-desaturated-blue-toggle-keypad: 223, 31%, 20%;
+  --very-dark-desaturated-blue-screen: 224, 36%, 15%;
+
+  --desaturated-dark-blue-key-bg: 225, 21%, 49%;
+  --desaturated-dark-blue-key-shw: 224, 28%, 35%;
+
+  --red-key-toggle: 6, 63%, 50%;
+  --dark-red-key-shw: 6, 70%, 34%;
+
+  --light-grayish-orange-key-bg: 30, 25%, 89%;
+  --grayish-orange-key-shw: 28, 16%, 65%;
+
+  --very-grayish-blue-text: 221, 14%, 31%;
+  --white: 0, 0%, 100%;
+
+  --light-gray-main: 0, 0%, 90%;
+  --grayish-red-toggle: 0, 5%, 81%;
+  --very-light-gray-screen: 0, 0%, 93%;
+
+  --dark-moderate-cyan-key-bg: 185, 42%, 37%;
+  --very-dark-cyan-key-shw: 185, 58%, 25%;
+
+  --orange-key-bg: 25, 98%, 40%;
+  --dark-orange-key-shw: 25, 99%, 27%;
+
+  --light-grayish-yellow-key-bg: 45, 7%, 89%;
+  --dark-grayish-orange-key-shw: 35, 11%, 61%;
+
+  --very-dark-grayish-yellow-text: 60, 10%, 19%;
+  /* --white: 0,0%,100%; */
+
+  --very-dark-violet-main: 268, 75%, 5%;
+  --very-dark-violet-toggle: 268, 71%, 12%;
+
+  --dark-violet-key-bg: 281, 98%, 26%;
+  --vivid-magenta-key-shw: 285, 91%, 52%;
+
+  --pure-cyan-key-bg: 176, 100%, 44%;
+  --soft-cyan-key-shw: 177, 92%, 70%;
+
+  --very-dark-violet-key-bg: 268, 47%, 21%;
+  --dark-magenta-key-shw: 290, 70%, 36%;
+
+  --light-yellow-text: 52, 100%, 62%;
+  --very-dark-blue-text: 198, 20%, 13%;
+  /* --white: 0,0%, 100%; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --very-dark-desaturated-blue-main: 222, 26%, 31%;
+    --very-dark-desaturated-blue-toggle-keypad: 223, 31%, 20%;
+    --very-dark-desaturated-blue-screen: 224, 36%, 15%;
+
+    --desaturated-dark-blue-key-bg: 225, 21%, 49%;
+    --desaturated-dark-blue-key-shw: 224, 28%, 35%;
+
+    --red-key-toggle: 6, 63%, 50%;
+    --dark-red-key-shw: 6, 70%, 34%;
+
+    --light-grayish-orange-key-bg: 30, 25%, 89%;
+    --grayish-orange-key-shw: 28, 16%, 65%;
+
+    --very-grayish-blue-text: 221, 14%, 31%;
+    --white: 0, 0%, 100%;
+
+    --light-gray-main: 0, 0%, 90%;
+    --grayish-red-toggle: 0, 5%, 81%;
+    --very-light-gray-screen: 0, 0%, 93%;
+
+    --dark-moderate-cyan-key-bg: 185, 42%, 37%;
+    --very-dark-cyan-key-shw: 185, 58%, 25%;
+
+    --orange-key-bg: 25, 98%, 40%;
+    --dark-orange-key-shw: 25, 99%, 27%;
+
+    --light-grayish-yellow-key-bg: 45, 7%, 89%;
+    --dark-grayish-orange-key-shw: 35, 11%, 61%;
+
+    --very-dark-grayish-yellow-text: 60, 10%, 19%;
+    /* --white: 0,0%,100%; */
+
+    --very-dark-violet-main: 268, 75%, 5%;
+    --very-dark-violet-toggle: 268, 71%, 12%;
+
+    --dark-violet-key-bg: 281, 98%, 26%;
+    --vivid-magenta-key-shw: 285, 91%, 52%;
+
+    --pure-cyan-key-bg: 176, 100%, 44%;
+    --soft-cyan-key-shw: 177, 92%, 70%;
+
+    --very-dark-violet-key-bg: 268, 47%, 21%;
+    --dark-magenta-key-shw: 290, 70%, 36%;
+
+    --light-yellow-text: 52, 100%, 62%;
+    --very-dark-blue-text: 198, 20%, 13%;
+    /* --white: 0,0%, 100%; */
   }
 }
 
@@ -19,3 +115,160 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-grid {
+  display: grid;
+  grid-template-areas:
+    "seven eight nine del"
+    "four five six plus"
+    "one two three minus"
+    "dot zero div mul"
+    "clear clear solve solve";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.div {
+  grid-area: div;
+}
+
+.mul {
+  grid-area: mul;
+}
+
+.del {
+  grid-area: del;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.solve {
+  grid-area: solve;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+/* ### Theme 1
+
+#### Backgrounds
+
+- Very dark desaturated blue (main background): hsl(222, 26%, 31%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
+
+#### Keys
+
+- Desaturated dark blue (key background): hsl(225, 21%, 49%)
+- Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
+
+- Red (key background, toggle): hsl(6, 63%, 50%)
+- Dark red (key shadow): hsl(6, 70%, 34%)
+
+- Light grayish orange (key background): hsl(30, 25%, 89%)
+- Grayish orange (key shadow): hsl(28, 16%, 65%)
+
+#### Text
+
+- Very dark grayish blue: hsl(221, 14%, 31%)
+- White: hsl(0, 0%, 100%)
+
+### Theme 2
+
+#### Backgrounds
+
+- Light gray (main background): hsl(0, 0%, 90%)
+- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
+- Very light gray (screen background): hsl(0, 0%, 93%)
+
+#### Keys
+
+- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Very dark cyan (key shadow): hsl(185, 58%, 25%)
+
+- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Dark orange (key shadow): hsl(25, 99%, 27%)
+
+- Light grayish yellow (key background): hsl(45, 7%, 89%)
+- Dark grayish orange (key shadow): hsl(35, 11%, 61%)
+
+#### Text
+
+- Very dark grayish yellow: hsl(60, 10%, 19%)
+- White (text): hsl(0, 0%, 100%)
+
+### Theme 3
+
+#### Backgrounds
+
+- Very dark violet (main background): hsl(268, 75%, 9%)
+- Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+
+#### Keys
+
+- Dark violet (key background): hsl(281, 89%, 26%)
+- Vivid magenta (key shadow): hsl(285, 91%, 52%)
+
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
+
+- Very dark violet (key background): hsl(268, 47%, 21%)
+- Dark magenta (key shadow): hsl(290, 70%, 36%)
+
+#### Text
+
+- Light yellow: hsl(52, 100%, 62%)
+- Very dark blue: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0%, 100%) */
